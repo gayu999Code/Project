@@ -3,24 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
+    <title>Attractive Web Page</title>
     <style>
-        body {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
             font-family: Arial, sans-serif;
-            text-align: center;
+        }
+        body {
             background-color: #f4f4f4;
-            padding: 50px;
-        }
-        h1 {
             color: #333;
+            text-align: center;
         }
-        p {
-            color: #666;
+        header {
+            background: linear-gradient(135deg, #ff7eb3, #ff758c);
+            padding: 20px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?nature') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .button {
+            background: #ff758c;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: 0.3s;
+        }
+        .button:hover {
+            background: #e05670;
+        }
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #222;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        .navbar a:hover {
+            background: #ff758c;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Webpage</h1>
-    <p>This is a simple HTML page with basic styling.</p>
+    <header>My Beautiful Web Page</header>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="hero">Welcome to My World</div>
+    <div class="container">
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?technology" alt="Tech Image">
+            <h3>Technology</h3>
+            <p>Explore the latest trends in tech.</p>
+            <button class="button">Learn More</button>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?travel" alt="Travel Image">
+            <h3>Travel</h3>
+            <p>Discover new places and adventures.</p>
+            <button class="button">Explore</button>
+        </div>
+        <div class="card">
+            <img src="https://source.unsplash.com/300x200/?food" alt="Food Image">
+            <h3>Food</h3>
+            <p>Delicious recipes and food culture.</p>
+            <button class="button">Taste</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2025 My Beautiful Web Page. All rights reserved.</p>
+    </div>
 </body>
 </html>
